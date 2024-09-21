@@ -1,0 +1,22 @@
+{
+  "name": "tp_apiexpress_grupo18",
+  "version": "1.0.0",
+  "description": "Repositorio del Grupo 18 de UTN-Laboratorio en Computacion IV",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "lint": "npx standard",
+    "lint-fix": "npx standard --fix",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "standard": "^17.1.2"
+  }
+}
