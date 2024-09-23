@@ -15,7 +15,6 @@ const getArtistaPorNombre = async (req, res) => {
     if (artista) {
       const resultado = {
         nombre: artista.name,
-        generos: artista.genres,
         id: artista.id
       }
       res.status(200).json({ status: 'ok', data: resultado }) // response.data.artists.items
