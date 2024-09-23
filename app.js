@@ -1,11 +1,6 @@
-const express = require('express')
-const port = 3000 // se deberia mover al .env???
-const app = express()
+require('dotenv').config()
+const Server = require('./models/server')
 
-app.get('/', (req, res) => {
-  res.send('Hola mundo!')
-})
+const servidor = new Server()
 
-app.listen(port, () => {
-  console.log(`App escuchando puerto htpp://localhost:${port}`)
-})
+servidor.listen()

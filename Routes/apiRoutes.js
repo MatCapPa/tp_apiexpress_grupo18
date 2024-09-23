@@ -1,5 +1,5 @@
 const express = require('express')
-const { getNewReleases, getAlbumById, searchAlbums } = require('../controllers/spotifyController')
+const { getNewReleases, getAlbumById, searchAlbums } = require('../controllers/spotifyControllers')
 
 const router = express.Router()
 
