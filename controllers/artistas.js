@@ -25,10 +25,10 @@ const getArtistaPorNombre = async (req, res) => {
 }
 
 const getArtistaPorId = async (req, res) => {
-  const { name } = req.params
+  const { id } = req.params
   try {
     const token = await getAccessToken()
-    const response = await axios.get(`https://api.spotify.com/v1/artists/${name}`, {
+    const response = await axios.get(`https://api.spotify.com/v1/artists/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

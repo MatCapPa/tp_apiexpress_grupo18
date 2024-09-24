@@ -13,8 +13,8 @@ class Server {
   }
 
   rutas () {
-    this.app.use('/', require('../Routes/apiRoutes'))
-    this.app.use('/api/artistas', require('../Routes/artistas'))
+    this.app.use('/', require('../Routes/apiRoutes')) // endponits de Batista
+    this.app.use('/api/artistas', require('../Routes/artistas')) // endpoints de Cappa
   }
 
   listen () {
