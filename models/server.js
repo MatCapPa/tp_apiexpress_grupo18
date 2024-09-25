@@ -15,6 +15,7 @@ class Server {
   rutas () {
     this.app.use('/', require('../Routes/apiRoutes'))
     this.app.use('/api/artistas', require('../Routes/artistas'))
+    this.app.use('/api', require('../Routes/variosRoutes')) // ejemplo http://localhost:3000/api/generos
   }
 
   listen () {
