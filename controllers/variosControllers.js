@@ -14,8 +14,8 @@ const getGenerosMusicales = async (req, res) => {
       }
     })
 
-    // si funciona, se consigen los generos
-    const generos = response.data.genres
+    // si funciona, se consigen los generos (se limita a los primeros 50)
+    const generos = response.data.genres.slice(0, 50)
 
     // se envia respuesta
     res.status(200).json({ status: 'ok', data: generos })
