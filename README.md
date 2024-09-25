@@ -5,3 +5,4 @@ Si tira error husky, poner "npx standard --fix" para arreglar la mayoria de los 
 
  Aportes de Alumno Batista:  auth.js - Carpeta Routes/apiRoutes.js - Carpeta controllers/spotifyControllers.js - modif en el .env
  Aportes de Alumno Cappa: server.js - artistas.js(en carpeta Routes) - artistas.js(en carpeta controllers) - modif en app.js
+ alumno Flores: controllers/variosControllers.js y Routes/variosRoutes.js
