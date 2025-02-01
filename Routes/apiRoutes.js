@@ -1,15 +1,23 @@
-const express = require('express')
-const { getNewReleases, getAlbumById, searchAlbums } = require('../controllers/spotifyController')
+const express = require('express');
+const {
+  getNewReleases,
+  getPlaylistsFromFile,
+  searchAlbums,
+  getPlaylistTracks
+} = require('../controllers/spotifyControllers');
 
-const router = express.Router()
+const router = express.Router();
 
 // Endpoint para obtener nuevos lanzamientos
-router.get('/releases', getNewReleases)
+router.get('/releases', getNewReleases);
 
-// Endpoint para obtener un álbum por ID
-router.get('/albums/:id', getAlbumById)
+// Endpoint para obtener todas las playlists del usuario
+router.get('/playlists', getPlaylistsFromFile);
 
 // Endpoint para buscar álbumes por artista
-router.get('/albums', searchAlbums)
+router.get('/search', searchAlbums);
 
-module.exports = router
+// Endpoint para obtener los tracks de una playlist específica
+router.get('/playlists/:playlistId/tracks', getPlaylistTracks);
+
+module.exports = router;
